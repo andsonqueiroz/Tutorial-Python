@@ -15,23 +15,24 @@ while escolha != 7:
 
     match escolha:      #O famoso SWITCH CASE
         case 1:
-            adicionado = input("Digite o elemento para inserir: ")
+            adicionado = input("\nDigite o elemento para inserir: ")    # O famoso \n, para quebrar linha
             vetor.append(adicionado)        #Os vetores são semelhantes aos ArrayLists do Java, não precisa declarar tamanho, apenas inserir (append) e remover (pop/remove)
             if adicionado in vetor:     #Um IF ELSE, para verificar se o conteúdo da variável "adicionado" está presente no vetor(ou lista, como chamam no Python)
-                print("Adicionado com sucesso!")
+                print("\n-- Adicionado com sucesso! --\n")
             else:
-                print("Erro ao adicionar elemento. Tente novamente")
+                print("\n-- Erro ao adicionar elemento. Tente novamente --\n")
     
         case 2:
+            print("\n---- ELEMENTOS EXISTENTES ----")
             if len(vetor) > 0:      # IF ELSE para verificar se o tamanho do vetor é maior que 0 (se possui elemento ou se está vazio). len(vetor) é útil para mostrar o tamanho de um vetor
                 for i in vetor:         #Um FOR para percorrer o vetor (ou lista)
                     print(str(cont) + ". " + i)     # o "i" será o conteúdo de cada posição do vetor, assim pode imprimir o "i" no PRINT() que irá aparecer o conteúdo do vetor
                     cont +=1    # Contador para mostrar a posição de cada elemento do vetor (também poderia utilizar vetor.index(i), que iria mostrar o número da posição do conteúdo "i" do vetor)
                 removido = vetor.pop(int(input("Digite o elemento que deseja remover: ")))      # vetor.pop remove e retorna o elemento removido do vetor, assim é possivel armazenar numa variável o elemento removido, e posteriormente imprimir na tela para informar ao usuário
-                print("Elemento removido: " + removido)             #também é possível utilizar vetor.remove(), que irá apenas remover o elemento, sem retornar nenhuma informação do que foi removido.
+                print("\n-- Elemento removido: " + removido + " --\n")             #também é possível utilizar vetor.remove(), que irá apenas remover o elemento, sem retornar nenhuma informação do que foi removido.
                 cont = 0
             else:
-                print("Não há elementos para remover.")
+                print("\n-- Não há elementos para remover. --\n")
                 cont = 0
 
         case 3:
@@ -39,5 +40,7 @@ while escolha != 7:
                 for i in vetor:
                     print(i)
             else:
-                print("Não há elementos")
+                print("\n-- Não há elementos --\n")
+        case 7:
+            print("\nVolte sempre :)")
                 
