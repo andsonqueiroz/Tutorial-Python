@@ -28,7 +28,7 @@ while escolha != 7:
                     print(str(cont) + ". " + i)     # o "i" será o conteúdo de cada posição do vetor, assim pode imprimir o "i" no PRINT() que irá aparecer o conteúdo do vetor
                     cont +=1    # Contador para mostrar a posição de cada elemento do vetor (também poderia utilizar vetor.index(i), que iria mostrar o número da posição do conteúdo "i" do vetor)
                 removido = vetor.pop(int(input("Digite o elemento que deseja remover: ")))      # vetor.pop remove e retorna o elemento removido do vetor, assim é possivel armazenar numa variável o elemento removido, e posteriormente imprimir na tela para informar ao usuário
-                print("Elemento removido: " + removido)
+                print("Elemento removido: " + removido)             #também é possível utilizar vetor.remove(), que irá apenas remover o elemento, sem retornar nenhuma informação do que foi removido.
                 cont = 0
             else:
                 print("Não há elementos para remover.")
