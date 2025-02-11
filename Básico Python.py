@@ -1,6 +1,6 @@
 escolha = 0
 cont = 0
-vetor = []  #Vetor não precisa declarar tamanho, apenas o conteúdo
+vetor = []  #Vetor não precisa declarar tamanho, apenas o conteúdo (que neste caso é um vetor vazio)
 
 def menuzinho():    #Definindo função de imprimir menú, todas as funções/métodos devem ser definidas antes de ser chamadas, e é necessário ter "def"
     print("------- Olá, bem vindo ao primeiro sisteminha em PYTHON -------")
