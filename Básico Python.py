@@ -1,12 +1,16 @@
 escolha = 0
 cont = 0
 vetor = []  #Vetor não precisa declarar tamanho, apenas o conteúdo
-while escolha != 7:
+
+def menuzinho():    #Definindo função de imprimir menú, todas as funções/métodos devem ser definidas antes de ser chamadas, e é necessário ter "def"
     print("------- Olá, bem vindo ao primeiro sisteminha em PYTHON -------")
     print("1. adicionar elemento")
     print("2. remover elemento")
     print("3. imprimir todos os elementos")
     print("7. Sair")
+
+while escolha != 7:
+    menuzinho()     #chamando função de imprimir menú
     escolha = int(input("digite: "))    #Todo INPUT é retornado um valor STRING, sendo assim para receber números precisam ser manualmente declarados
 
     match escolha:      #O famoso SWITCH CASE
