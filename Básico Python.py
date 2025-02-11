@@ -25,8 +25,10 @@ while escolha != 7:
                     cont +=1    # Contador para mostrar a posição de cada elemento do vetor (também poderia utilizar vetor.index(i), que iria mostrar o número da posição do conteúdo "i" do vetor)
                 removido = vetor.pop(int(input("Digite o elemento que deseja remover: ")))      # vetor.pop remove e retorna o elemento removido do vetor, assim é possivel armazenar numa variável o elemento removido, e posteriormente imprimir na tela para informar ao usuário
                 print("Elemento removido: " + removido)
+                cont = 0
             else:
                 print("Não há elementos para remover.")
+                cont = 0
 
         case 3:
             if vetor:       #se o vetor tiver elemento, o IF será true (essa forma é mais eficiente para quem só quer saber se o vetor está vazio ou não)
@@ -34,3 +36,4 @@ while escolha != 7:
                     print(i)
             else:
                 print("Não há elementos")
+                
