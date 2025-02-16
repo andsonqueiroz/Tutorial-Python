@@ -1,6 +1,8 @@
 class Pessoa:       #O nome da classe
     def __init__(self, nome):   #__init__ é o famoso CONSTRUTOR, "self" refere-se a classe atual, e "nome" é o atributo
         self.nome = nome    #O atributo nome recebe o dado por parâmetro do construtor
+        
+# Já fora da classe:
 
 def imprimirNome(Pessoa):       #função para imprimir o nome da pessoa, passando por parametro a CLASSE "Pessoa"
     print(f"O seu nome é {Pessoa.nome}.")       #Um print com texto formatado, juntando o texto com a string "Pessoa.nome" da classe Pessoa
